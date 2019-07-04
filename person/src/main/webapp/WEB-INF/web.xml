@@ -5,6 +5,18 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <listener>
+    <listener-class>servlets.MyServletRequestListener</listener-class>
+  </listener>
+
+  <listener>
+    <listener-class>servlets.MyHttpSessionListener</listener-class>
+  </listener>
+
+  <listener>
+    <listener-class>servlets.MyContextServletListener</listener-class>
+  </listener>
+
   <servlet>
     <servlet-name>simpleServlet</servlet-name>
     <servlet-class>my.servlets.SimpleServlet</servlet-class>
@@ -12,6 +24,8 @@
 
 <servlet-mapping>
     <servlet-name>simpleServlet</servlet-name>
-    <url-pattern>/my.servlets</url-pattern>
+    <url-pattern>/servlets</url-pattern>
 </servlet-mapping>
+
+
 </web-app>

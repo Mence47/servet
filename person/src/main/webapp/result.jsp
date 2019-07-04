@@ -7,5 +7,6 @@
         <p>Hello <%= (String)session.getAttribute("lastname")%> 
             <%= (String)session.getAttribute("name")%> 
             <%= request.getParameter("thirdname")%> </p>
+            <% session.invalidate(); %>
     </body>
-</htm:q:l>
+</html>
