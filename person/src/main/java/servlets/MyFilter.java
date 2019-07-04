@@ -14,6 +14,7 @@ public class MyFilter implements Filter {
 
     public void doFilter(ServletRequest request, ServletResponse response,
     FilterChain chain) throws IOException, ServletException {
+        System.out.println("filtering request before result.jsp");
         chain.doFilter(request, response);
     }
 
